@@ -2,8 +2,7 @@
   "name": "fcc-learn-npm-package-json",
   "author": "Victoria Langø",
   "dependencies": {
-    "express": "^4.14.0",
-    "@freecodecamp/example": "^1.x.x"
+    "express": "^4.14.0"
   },
   "main": "server.js",
   "scripts": {
@@ -19,7 +18,7 @@
     "api",
     "node",
     "express",
-    "freeCodeCamp"
+    "freecodecamp"
   ],
   "license": "MIT",
   "version": "1.2.0"
