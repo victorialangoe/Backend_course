@@ -3,7 +3,7 @@
   "author": "Victoria Langø",
   "dependencies": {
     "express": "^4.14.0",
-	"@freecodecamp/example": "1.2.13"
+    "@freecodecamp/example": "~1.2.13"
   },
   "main": "server.js",
   "scripts": {
