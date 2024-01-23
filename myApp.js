@@ -1,8 +1,11 @@
-require("dotenv").config();
 let express = require("express");
 let app = express();
+let bodyParser = require("body-parser");
 absolutePath = __dirname + "/views/index.html";
 let message = { message: "Hello json" };
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   let string = req.method + " " + req.path + " - " + req.ip;
