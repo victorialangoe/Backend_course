@@ -26,12 +26,18 @@ app.get("/json", (req, res) => {
 app.get(
   "/now",
   (req, res, next) => {
-    req.time = new Date().toString(); 
+    req.time = new Date().toString();
     next();
   },
   (req, res) => {
     res.json({ time: req.time });
   }
 );
+
+app.get("/:word/echo", (req, res) => {
+  let word = req.params.word;
+
+  res.json({ echo: word });
+});
 
 module.exports = app;
